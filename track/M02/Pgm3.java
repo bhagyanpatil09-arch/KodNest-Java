@@ -26,5 +26,9 @@ public class Pgm3 {
 
         public Scanner() {
         }
+
+        private int nextInt() {
+            throw new UnsupportedOperationException("Not supported yet.");
+        }
     }
 }
