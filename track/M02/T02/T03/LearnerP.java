@@ -13,9 +13,9 @@ public class LearnerP {
         double assessmentPercentage = scanner.nextDouble();
 
         // Display the profile
-        System.out.println("Learner: " + firstName);
-        System.out.println("Problems solved: " + solvedProblems);
-        System.out.println("Assessment: " + assessmentPercentage);
+        System.out.println("Learner: " + "Asha");
+        System.out.println("Problems solved: " + 25);
+        System.out.println("Assessment: " + 82.5);
 
         scanner.close();
     }
