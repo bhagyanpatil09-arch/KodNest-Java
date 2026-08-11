@@ -5,29 +5,28 @@ public class RangeAnalyzer {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
 
-        // Read the range
-        int start = scanner.nextInt();
-        int end = scanner.nextInt();
+            // Read the range
+            int start = scanner.nextInt();
+            int end = scanner.nextInt();
 
-        int evenSum = 0;
-        int oddCount = 0;
+            int evenSum = 0;
+            int oddCount = 0;
 
-        // Analyze every number in the range
-        for (int i = start; i <= end; i++) {
+            // Analyze every number in the range
+            for (int i = start; i <= end; i++) {
 
-            if (i % 2 == 0) {
-                evenSum = evenSum + i;
-            } else {
-                oddCount++;
+                if (i % 2 == 0) {
+                    evenSum = evenSum + i;
+                } else {
+                    oddCount++;
+                }
             }
+
+            // Display the results
+            System.out.println("Even sum: " + evenSum);
+            System.out.println("Odd count: " + oddCount);
         }
-
-        // Display the results
-        System.out.println("Even sum: " + evenSum);
-        System.out.println("Odd count: " + oddCount);
-
-        scanner.close();
     }
 }
